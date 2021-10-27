@@ -1,0 +1,60 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+	double a, b, v, k, g, d, e, q, f, h;
+	a = 1000;
+	b = 0.0001;
+
+	v = (a - b);
+	k = pow(v, 2); // (a-b)^2
+	g = pow(a, 2); // a^2
+	d = 2 * a * b;
+	e = g - d; // (a^2 - 2ab)
+	q = k - e; // (a-b)^2 - (a^2 - 2ab)
+	f = pow(b, 2); // b^2
+	h = q / f; // ((a-b)^2 - (a^2 - 2ab))/b^2
+
+	cout.setf(ios::fixed);
+	cout << "a= " << a << endl;
+	cout << "b= " << b << endl;
+	cout << "v= " << v << endl;
+	cout << "k= " << k << endl;
+	cout << "g= " << g << endl;
+	cout << "d= " << d << endl;
+	cout << "e= " << e << endl;
+	cout << "q= " << q << endl;
+	cout << "f= " << f << endl;
+	cout << "h= " << h << endl;
+
+
+
+	float A, B, V, K, G, D, E, Q, F, H;
+	A = 1000;
+	B = 0.0001f;
+
+	V = (A - B);
+	K = pow(V, 2); // (a-b)^2
+	G = pow(A, 2); // a^2
+	D = 2 * A * B;
+	E = G - D; // (a^2 - 2ab)
+	Q = K - E; // (a-b)^2 - (a^2 - 2ab)
+	F = pow(B, 2); // b^2
+	H = Q / F; // ((a-b)^2 - (a^2 - 2ab))/b^2
+
+	cout.setf(ios::fixed);
+	cout << "A= " << A << endl;
+	cout << "B= " << B << endl;
+	cout << "V= " << V << endl;
+	cout << "K= " << K << endl;
+	cout << "G= " << G << endl;
+	cout << "D= " << D << endl;
+	cout << "E= " << E << endl;
+	cout << "Q= " << Q << endl;
+	cout << "F= " << F << endl;
+	cout << "H= " << H << endl;
+	return 0;
+
+}
