@@ -1,0 +1,28 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main() {
+	setlocale(LC_ALL, "Russian");
+	int m, n;
+	cout << "Введите m и n";
+	cin >> m >> n;
+	cout << m - ++n << endl;
+
+	if (++m > -n)
+	{
+		cout << "true" << endl;
+	}
+	else {
+		cout << "false" << endl;
+	}
+
+	if (--n < ++m)
+	{
+		cout << "true" << endl;
+	}
+	else {
+		cout << "false" << endl;
+	}
+	return 0;
+}
